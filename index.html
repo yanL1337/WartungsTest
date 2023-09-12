@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wartungsplanmaker</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <fieldset>
+      <legend>Wartungsplan</legend>
+
+      <input type="radio" id="m1" name="motor" value="motor1" />
+      <label for="m1">Motor1</label>
+      <input type="radio" id="m2" name="motor" value="motor2" />
+      <label for="m2">Motor2</label>
+      <input type="radio" id="mnone" name="motor" value="none" checked />
+      <label for="mnone">Keine Motor Wartung</label>
+
+      <br />
+      <input type="radio" id="dreier" name="wartung" value="36er" />
+      <label for="dreier">36er</label>
+      <input type="radio" id="siebener" name="wartung" value="72er" />
+      <label for="siebener">72er</label>
+      <input type="radio" id="achter" name="wartung" value="84er" />
+      <label for="achter">84er</label>
+      <input type="radio" id="wnone" name="wartung" value="none" checked />
+      <label for="wnone">Keine Wartung</label>
+      <button type="button" onclick="getChecked(); getCheckedMotor();">
+        Submit
+      </button>
+      <div id="result"></div>
+      <div id="resultMotor"></div>
+    </fieldset>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
